@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy New Year My Love ❤️</title>
+
+    <!-- CUTE + ROMANTIC GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎆 Happy New Year 🎆</h1>
+        <h2>Sharmistha ❤️</h2>
+
+        <!-- COUPLE PHOTO -->
+        <img src="love.jpg" class="photo" alt="Our Love">
+
+        <!-- COUNTDOWN -->
+        <div class="countdown">
+            <h3>Countdown to Our New Year 🎉</h3>
+            <p id="timer">Loading...</p>
+        </div>
+
+        <!-- MUSIC BUTTON -->
+        <button onclick="startLove()">Play Our Song 🎶</button>
+
+        <!-- SURPRISE TEXT -->
+        <p id="hiddenText">I Love You More Than Words Can Say 🫶</p>
+
+        <!-- LOVE LETTER -->
+        <div class="letter">
+            <h3>My Letter to You 💖</h3>
+            <p>
+                My love,<br><br>
+
+                As this year ends, I just want you to know how grateful I am for you.
+                You changed my life in ways I never expected. Your smile brings me peace,
+                your presence feels like home, and your love means everything to me.<br><br>
+
+                I promise to stand by you in every moment — in happiness,
+                in silence, in struggles, and in dreams. I don’t know what the future holds,
+                but I know one thing for sure: I want it with you.<br><br>
+
+                Happy New Year, my heart ❤️  
+                Always yours.
+            </p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // MUSIC
+        const music = new Audio("love.mp3");
+        music.loop = true;
+
+        function startLove() {
+            music.play();
+            document.getElementById("hiddenText").style.display = "block";
+        }
+
+        // COUNTDOWN
+        const newYear = new Date("January 1, 2026 00:00:00").getTime();
+
+        setInterval(() => {
+            const now = new Date().getTime();
+            const gap = newYear - now;
+
+            const days = Math.floor(gap / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((gap % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML =
+                `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+        }, 1000);
+    </script>
+    <link rel="stylesheet" href="style.css"
+    <img src="love.jpg.jpeg" class="photo" alt="Our photo"
+    <audio controls></audio>
+         <source src="love.mp3.mpeg" type="audio/mpeg">
+     </audio>
+
+</body>
+</html>
