@@ -1,0 +1,119 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #ff65a3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CONTAINER */
+.container {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* HEADINGS */
+h1, h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+/* PHOTO */
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin: 15px 0;
+}
+
+/* COUNTDOWN */
+.countdown {
+    margin-top: 20px;
+    background: rgba(255,255,255,0.2);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* BUTTON */
+button {
+    margin-top: 20px;
+    padding: 14px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #ff4b7d;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* SURPRISE TEXT */
+#hiddenText {
+    margin-top: 20px;
+    font-size: 18px;
+    display: none;
+}
+
+/* LOVE LETTER */
+.letter {
+    margin-top: 25px;
+    background: rgba(255,255,255,0.3);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.letter h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    h1 { font-size: 30px; }
+    h2 { font-size: 22px; }
+    .photo {
+        width: 120px;
+        height: 120px;
+    }
+}
